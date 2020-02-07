@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    max-width: 762px;
+  }
+  body{
+    margin: 10px
+  }
+  h1{
+    color: #05174A;
+  }
+  h2{
+    color: #A78DE2;
+    font-style: italic;
+  }
+  legend{
+    margin-left: 25px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .f1 label{
+    margin-left: 50px;
+    font-weight: bold;
+  }
+  .f2{
+    margin-bottom: 3px;
+    font-weight: bold;
+  }
+  .f2 input[type=text]{
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .f2 input[type=number]{
+    width: 160px;
+  }
+  p{
+    margin-left: 50px;
+    font-weight: bold;
+  }
+  
+  input[type=submit]:hover{
+    border: 1px solid blue;
+  }
+  </style>
+</head>
+<body>
+  <h1>A Simple Form</h1>
+  <h2>Form Fundamentals</h2>
+  <form action="/" method="#" autocomplete="on">
+    <fieldset class="f1">
+      <legend>Customer Info</legend>
+      <label>Name:&nbsp;</label><input type="text" name="name" placeholder="Enter your name" 
+       autofocus required size="50"><br /><br />
+      <label>Telephone:&nbsp;</label><input type="text" name="tel" placeholder="Pattern: 1-234-567-8910" pattern="([0-9]{1}-([0-9]{3})-([0-9]{3})-([0-9]{4}))" size="50"><br /><br />
+      <label>Email address:&nbsp;</label><input type="email" name="email" placeholder="Enter your email address" required multiple size="50"><br /><br />
+    </fieldset>
+    <fieldset class="f2">
+      <legend>Books</legend>
+      <input type="text" name="book" list="book" size="40">
+      <datalist id="book">
+      <option value="กีต้าร์โปร่ง เล่นง่าย เป็นเร็ว +VCD"></option>
+      <option value="ตะลุยโจทย์ Error 500 ข้อ"></option>
+      <option value="เทพเจ้าและสิ่งน่ารู้พระราชนิพนธ์ ร.6"></option>
+      <option value="ไม่มีหญิงสาวในบทกวี"></option>
+      <option value="คู่มือใช้งาน Access 2010 ฉบับสมบูรณ์"></option>
+      </datalist>
+      <label>&nbsp;Quantity (Maximum 5):</label>
+      <input type="number" name="quantity" min="1" max="5" size="5">
+    </fieldset>
+
+<input type="submit" value="Submit">
+  </form>
+  <p>© 2011 Acme United. All rights reserved.</p>
+</body>
+</html>

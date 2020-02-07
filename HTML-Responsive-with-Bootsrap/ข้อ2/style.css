@@ -1,0 +1,114 @@
+.navbar {
+  display: none;
+}
+
+#searchBar {
+  display: none;
+}
+
+.hdnav {
+  font-size: 3.6rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.navbar-text a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+}
+.sticky-top {
+  height: 100%;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.culture p {
+  color: rgba(39, 39, 39, 0.5);
+}
+img {
+  margin-bottom: 0.5rem;
+}
+.mid a {
+  color: black;
+}
+.mid a:hover {
+  text-decoration-color: red;
+  color: black;
+}
+
+.left a {
+  color: black;
+}
+.left a:hover {
+  text-decoration-color: red;
+  color: black;
+}
+.culture {
+  background-color: #f4f5f6;
+}
+
+.more-stories h4 {
+  font-size: 1.1rem;
+}
+
+.more-stories p {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+
+.opinion > img {
+  max-width: 80px;
+}
+
+.opinion p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.right a {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.right a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+
+@media (max-width: 991.98px) {
+  .left,
+  .opinion {
+    position: static !important ;
+  }
+}

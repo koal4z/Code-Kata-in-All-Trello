@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+    <style>
+      body {
+        border-left: 4px #1e90ff solid !important;
+        border: 1px solid black;
+        padding-left: 15px;
+        padding-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create an Account</h1>
+    <br />
+    <form action="#">
+      <label for="email">Email :</label><br />
+      <input type="text" name="email" /><br />
+      <label for="password">Password :</label><br />
+      <input type="password" name="password" /><br />
+      <br />
+      <label for="age">Age :</label><br />
+      <select name="age" id="age">
+        <option value="selectAge">Select Age</option>
+        <option value="Under 18<">Under 18</option>
+        <option value="18-25">18-25</option>
+        <option value="26-30">26-30</option>
+        <option value="Over 30">Over 30</option> </select
+      ><br />
+      <br />
+      <label for="texarea">Tell us a little about yourself: </label><br />
+      <textarea cols="50" rows="10"></textarea><br />
+      <input type="checkbox" />&nbsp; I agree to the
+      <a href="#" target="blank">term of service</a><br />
+      <br />
+      <input type="submit" value="Sign up" />
+    </form>
+  </body>
+</html>
